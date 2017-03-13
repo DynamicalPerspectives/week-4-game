@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Crystals Game_JM</title>
-</head>
-<body>
+<html lang="en-US">
 
+<head>
+    <meta name=“viewport” content=“width=device-width, initial-scale=1”>
+    <meta charset="utf-8">
+    <title>Crystals Game_JM</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<title>Crystals Game_JM</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>Crystal Collector!</header>
+        <div id="container-instructions">
+            <div id="instructions">
+                <h2>How To Play</h2>
+                <br>
+                <ul>
+                    <li>
+                        <h3>You will be shown a random number at the start of the game, displayed below in the box titled <span>"Your Number NOT to Exceed".</span></li></h3>
+                        <br>
+                        <li>
+                            <h3>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li></h3>
+                            <br>
+                            <li>
+                                <h3>You WIN the game by matching your total score to the random number; you LOSE the game if your total score goes above the random number.</li></h3>
+                                <br>
+                                <li>
+                                    <h3>The value of each crystal is hidden from you until you click on it.</li></h3>
+                                    <br>
+                                    <li>
+                                        <h3>Each time the game starts, the game will change the values assigned to each crystal.</li></h3>
+                                        <br>
+                </ul>
+            </div>
+        </div>
+        <!-- Container comprising "row" with boxes for each of (i) random number generated; and (ii) win/loss tallies -->
+        <div id="container-randomNum-counts">
+            <div id="randomNum-box">
+                <h2><span>Your Total NOT to exceed:</span></h2>
+                <br>
+                <h2><span id="randomNum-displayed"></span></h2>
+            </div>
+            <div id="scorecard-box">
+                <h2 id="gameWins">Wins:</h2>
+                <h2 id="gameLosses">Losses:</h2>
+            </div>
+        </div>
+        <!-- Container comprising "row" with crystal images -->
+        <div id="container-gemImages">
+            <img src="assets/images/bluevar.jpg" class="gemPic" id="first" alt="an image of a blue variegated gemstone">
+            <img src="assets/images/yellow.jpg" class="gemPic" id="second" alt="an image of a yellow gemstone">
+            <img src="assets/images/pink.jpg" class="gemPic" id="third" alt="an image of a pink variegated gemstone">
+            <img src="assets/images/green.jpg" class="gemPic" id="fourth" alt="an image of a green gemstone">
+        </div>
+        <!-- Container "row" displaying the total score generated with a nested box-->
+        <div id="container-totalscore-box">
+            <h2>Your Total Score Is:</h2>
+            <div id="little-score-box">
+                <h2><span id="player-score-displayed"></span></h2>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
