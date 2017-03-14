@@ -21,7 +21,7 @@
                 <br>
                 <ul>
                     <li>
-                        <h3>You will be shown a random number at the start of the game, displayed below in the box titled <span>"Your Number NOT to Exceed".</span></li></h3>
+                        <h3>You will be shown a random number at the start of the game, displayed below in the box titled "Your Number NOT to Exceed".</li></h3>
                         <br>
                         <li>
                             <h3>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li></h3>
@@ -41,27 +41,28 @@
         <!-- Container comprising "row" with boxes for each of (i) random number generated; and (ii) win/loss tallies -->
         <div id="container-randomNum-counts">
             <div id="randomNum-box">
-                <h2><span>Your Total NOT to exceed:</span></h2>
+                <h2>Your Total NOT to exceed:</h2>
                 <br>
                 <h2><span id="randomNum-displayed"></span></h2>
             </div>
             <div id="scorecard-box">
-                <h2 id="gameWins">Wins:</h2>
-                <h2 id="gameLosses">Losses:</h2>
+                <h2>Wins: <span id= "gameWins"></span></h2>
+				</br>
+				</h2>Losses: <span id= "gameLosses"></span></h2>
+				
             </div>
         </div>
         <!-- Container comprising "row" with crystal images -->
-        <div id="container-gemImages">
-            <img src="assets/images/bluevar.jpg" class="gemPic" id="first" alt="an image of a blue variegated gemstone">
-            <img src="assets/images/yellow.jpg" class="gemPic" id="second" alt="an image of a yellow gemstone">
-            <img src="assets/images/pink.jpg" class="gemPic" id="third" alt="an image of a pink variegated gemstone">
-            <img src="assets/images/green.jpg" class="gemPic" id="fourth" alt="an image of a green gemstone">
+        <div class="container-gemImages">
+            <img src="assets/images/bluevar.jpg" class="gemPic" id="blue" alt="an image of a blue variegated gemstone">
+            <img src="assets/images/yellow.jpg" class="gemPic" id="yellow" alt="an image of a yellow gemstone">
+            <img src="assets/images/pink.jpg" class="gemPic" id="pink" alt="an image of a pink variegated gemstone">
+            <img src="assets/images/green.jpg" class="gemPic" id="green" alt="an image of a green gemstone">
         </div>
-        <!-- Container "row" displaying the total score generated with a nested box-->
+        <!-- Container "row" displaying the total score generated -->
         <div id="container-totalscore-box">
-            <h2>Your Total Score Is:</h2>
-            <div id="little-score-box">
-                <h2><span id="player-score-displayed"></span></h2>
+            <h2>Your Total Score Is:&emsp;<span id="total"></span></h2>
+                
             </div>
         </div>
     </div>

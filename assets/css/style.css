@@ -20,39 +20,29 @@ header {
     border: solid #ffffff 1px;
     padding: 10px;
     width: 40%;
-    margin-left: 20px;
+    margin-left: 500px;
     border-radius: 15px;
     text-align: center;
     font-size: 28px;
 }
-    
 
-}
-h1, h2, h3 {
-
-	font-size: 20px;
-	color: #ffffff;
-
+#randomNum-displayed {
+    font-size: 25px;
 }
 
-
-/*#container-instructions {
-	width: 40%;
-	background-color: #ffffff;
-	clear: both;
-	padding: 10px;
-	margin-left: 20px;
-	border: thick:2px;
-	border-radius: 15px;
-
-}*/
+h1,
+h2,
+h3 {
+    font-size: 20px;
+    color: #ffffff;
+}
 
 #instructions {
     width: 40%;
     background-color: #ffffff;
     clear: both;
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 500px;
     border: solid #ffffff 1px;
     border-radius: 15px;
     background-color: #bfafb0;
@@ -66,13 +56,21 @@ h1, h2, h3 {
     clear: both;
 }
 
-#container-gemImages {
+#container {
+    margin-bottom: 20px;
+    overflow: auto;
+    clear: both;
+    width: 960px;
+    margin: auto;
+}
+
+.container-gemImages {
     width: 40%;
     background-color: #ffffff;
     padding: 10px;
-    padding-left: 25px;
+    padding-left: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 500px;
     clear: both;
     border-radius: 15px;
     background-color: #bfafb0;
@@ -97,21 +95,10 @@ h1, h2, h3 {
     color: #ffffff;
     padding: 10px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 500px;
     border: solid 1px;
     border-radius: 15px;
 }
-
-
-/*#randomNum-displayed" {
-	background-color: #ffffff;
-	float: left;
-	display: inline-block;
-	color:blue;
-	padding: 10px;
-	margin-top: 20px;
-	border: solid 1px;
-    }*/
 
 #scorecard-box {
     width: 19%;
@@ -134,11 +121,11 @@ h1, h2, h3 {
     clear: both;
     padding: 10px;
     margin: 20px;
+    margin-left: 500px;
     border: solid #ffffff 1px;
     border-radius: 15px;
-
 }
 
-#little-score-box {}
-
-#player-score-displayed {}
+#total {
+    font-size: 25px;
+}
