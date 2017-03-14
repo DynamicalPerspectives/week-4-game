@@ -1,7 +1,7 @@
 // Week 4 Crystal Game_JM
 // You need this (line #4)
 
-$( document ).ready(function(){
+$(document).ready(function(){
 
 // Selects a random number between 19--120 to be revealed upon game start
   var random=Math.floor(Math.random()*101+19);
@@ -52,15 +52,14 @@ function lose(){
 alert ("You lose! Try again?");
   losses++;
   $("#gameLosses").text(losses);
-  reset()
+  reset();
 }
 
 //click for crystals and sets win/loss condition
-  $("blue").on ("click", function(){
+  $("#blue").on ("click", function(){
     playerTotal = playerTotal + num1;
     console.log("updated playerTotal= " + playerTotal);
     $("#total").text(playerTotal); 
-          //sets win/lose conditions
         if (playerTotal == random){
           win();
         }
